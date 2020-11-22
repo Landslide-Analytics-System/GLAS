@@ -4,7 +4,7 @@ import requests
 from tqdm import tqdm
 
 class LandslideScraper:
-    def __init__(self, ):
+    def __init__(self):
         self.csv_url = "https://opendata.arcgis.com/datasets/da67f0094eea4128855b0b54ccd99e26_0.csv"
         parser = argparse.ArgumentParser()
         parser.add_argument("--save_loc", type=str, default="./data/landslide_catalog")
