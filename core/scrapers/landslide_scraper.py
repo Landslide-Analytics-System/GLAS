@@ -1,7 +1,7 @@
 import os
 import argparse
 import requests
-from tqdm import tqdm
+# from tqdm import tqdm
 
 """
 Data sources for Global Landslide Catalog.
@@ -42,15 +42,12 @@ catalog.data.gov:
 class LandslideScraper:
     def __init__(self):
         self.csv_url = "https://data.nasa.gov/api/views/9ns5-uuif/rows.csv?accessType=DOWNLOAD"
-        parser = argparse.ArgumentParser()
-        parser.add_argument("--save_loc", type=str, default="./data/landslide_catalog")
-        self.flags = parser.parse_args()
+        self.base_dir = "./data/landslide_catalog"
 
     def download_data(self):
-        # print("Downloading data from " + self.csv_url)
-        req = requests.get(self.csv_url, stream=True)
-        filepath = os.path.join(self.flags.save_loc, "landslide_catalog.csv")
-
+        req = requests.get(self.csv_url)
+        filepath = os.path.join(self.base_dir, "landslide_catalog.csv")
+        
         with open(filepath, 'wb') as csv_file:
-            # pbar = tqdm(total=int(req.headers['Content-Length']))
             csv_file.write(req.content)
+        print("Data directory: " + self.base_dir + "landslide_catalog.csv")
