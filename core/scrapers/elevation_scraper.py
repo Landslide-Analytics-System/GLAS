@@ -15,4 +15,9 @@ class ElevationScraper:
     def download_data(self):
         req = requests.get(self.data_url)
         urls = re.findall(r"\"(https?://\S+)\"", str(req.text))
+        urls = urls[4:]
+        # urls = open(os.path.join(self.base_dir, "urls.txt"))
+        # urls.write(str(urls))
+        
+        # now download all of it and save to proper dir
         print(urls)
