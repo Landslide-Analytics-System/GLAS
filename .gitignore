@@ -1,6 +1,6 @@
 *.zip
 elevation_data/
-landslide_catalog.csv
+landslide_catalog/*.csv
 .DS_Store
 .vscode/
 
