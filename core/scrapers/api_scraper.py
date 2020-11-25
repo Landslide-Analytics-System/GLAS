@@ -31,7 +31,7 @@ def about(info):
 	sen3 = "This was a " + info[7] + " with " + info[9] + " severity near " + info[10] + " caused by " + info[8]
 	return "Landslide occurred on " + info[3] + " at " + info[1] + ", " + info[2] + " in " + info[4] + sen2 + sen3
 
-f = open("filtered_landslides.txt", "r")
+f = open("./reverse_filtered_landslides.txt", "r")
 entries = f.readlines()
 
 f3 = open("finished.txt", "r")

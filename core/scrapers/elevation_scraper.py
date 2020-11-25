@@ -5,6 +5,8 @@ import re
 from tqdm import tqdm
 import logging
 from zipfile import ZipFile
+import shutil
+
 """
 Tools for downloading and unzipping/sorting elevation data
 
@@ -62,4 +64,17 @@ class ElevationScraper:
             zf.extractall(self.data_dir)
             zf.close()
             # os.remove(os.path.join(self.data_dir, filename))
-    print("Finished unzipping files")
+        print("Finished unzipping files")
+
+    def sort_files(self):
+        folders = list(os.walk(self.data_dir))[0][1]
+
+        for folder in tqdm(folders):
+            folder_dir = os.path.join(self.data_dir, folder)
+            files = [f for f in os.listdir(folder_dir) if os.path.isfile(os.path.join(folder_dir, f))]
+            # print(files)
+            for file in files:
+                src_dir = os.path.join(folder_dir, file)
+                dest_dir = os.path.join(self.data_dir, file)
+                shutil.move(src_dir, dest_dir)
+            os.rmdir(folder_dir)

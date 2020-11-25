@@ -1,3 +1,6 @@
+reverse_filtered_landslide.txt
+finished.txt
+Data/
 *.zip
 elevation_data/
 landslide_catalog/*.csv
