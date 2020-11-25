@@ -5,7 +5,7 @@ from time import sleep
 import datetime
 from dateutil import parser
 
-class LandslideScraper:
+class WeatherScraper:
 	def __init__(self):
 		self.api_format = 'http://api.worldweatheronline.com/premium/v1/past-weather.ashx?key=cbdc0253c44449af88e45546202211&date='
 
