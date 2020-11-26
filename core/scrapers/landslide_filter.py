@@ -16,7 +16,7 @@ class LandslideScraper:
 
 	def writefile(self):
 		f = open("filtered_landslides.txt", "w")
-		for index, row in df.iterrows():
+		for index, row in self.df.iterrows():
 			f.write(str(row.OBJECTID)+" "+str(row.latitude)+" "+str(row.longitude)+" "+str(row.date)+" "+str(row.country)+" "+str(row.fatalities)+" "+str(row.injuries)+" "+str(row.type)+" "+str(row.trigger)+" "+str(row.severity)+" "+str(row.location)+"\n")
 		f.close()
 		print("\nGot:", len(df))
