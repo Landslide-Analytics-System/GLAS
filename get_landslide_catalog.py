@@ -1,4 +1,4 @@
-from core.scrapers.landslide_scraper import LandslideScraper
+from core.scrapers.download_landslide_scraper import LandslideScraper
 
 def main():
     landslide_scr = LandslideScraper()

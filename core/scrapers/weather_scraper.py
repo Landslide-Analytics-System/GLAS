@@ -15,7 +15,7 @@ class WeatherScraper:
 	# ObjectID, latitude, longitude, date, country, fatalities, injuries, type, trigger, severity, location
 	def getInfo(self, entry):
 		parts = entry.split(" ")
-		return parts[0], parts[1], parts[2], format_date(parts[3][:10]), parts[5], parts[6], parts[7], parts[8], parts[9], parts[10], parts[11]
+		return parts[0], parts[1], parts[2], self.format_date(parts[3][:10]), parts[5], parts[6], parts[7], parts[8], parts[9], parts[10], parts[11]
 
 	# Return formatted list of API Parameters for the API call given the lat, lon, and date of the landslide.
 	def gen_query(self, lat, lon, date, days_in_advance = 35):
@@ -43,7 +43,7 @@ class WeatherScraper:
 
 		# Go through landslides
 		for i, landslide in enumerate(entries):
-			oID, lat, lon, date, country, fatalities, injuries, l_type, trigger, severity, location = getInfo(landslide.strip())
+			oID, lat, lon, date, country, fatalities, injuries, l_type, trigger, severity, location = self.getInfo(landslide.strip())
 			# Date is before 2008 or data has already been received for the landslide
 			if (str(oID) + "..") in already_have or int(date[:4]) < 2008:
 				print("Skip:",str(oID))
@@ -68,7 +68,7 @@ class WeatherScraper:
 
 			# Info about landslide
 			f = open("Data/"+str(oID)+"/info.txt", "w+")
-			f.write(about(getInfo(landslide.strip())))
+			f.write(self.about(self.getInfo(landslide.strip())))
 			f.close()
 			# Maintain Progress
 			f2 = open("finished.txt", "a")
