@@ -2,8 +2,8 @@ import pandas as pd
 
 df = pd.read_csv("./data/landslide_catalog/with_weather_no_slope.csv")
 slopes = pd.read_csv("./data/landslide_catalog/landslides_with_slope.csv")
-slopes.rename(columns={"FID": "OBJECTID"}, inplace=True)
-slopes = slopes[['OBJECTID', 'slope']]
+slopes.rename(columns={"FID": "id"}, inplace=True)
+slopes = slopes[['id', 'slope']]
 
 merged = df.merge(slopes)
 
