@@ -1,6 +1,6 @@
 reverse_filtered_landslide.txt
 finished.txt
-Data/
+# Data/
 *.zip
 elevation_data/
 landslide_catalog/*.csv

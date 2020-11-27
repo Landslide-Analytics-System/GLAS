@@ -35,27 +35,38 @@ class ElevationConverter:
         self.filename = filename
         self.parser = srtmParser()
         self.elevation_data = self.parser.parseFile(os.path.join(self.data_dir, self.filename))
+        self.fill_val = np.mean(np.mean(np.array(self.elevation_data), axis=1))
+
+        # removing broken data points with the average of remaining elements. sorta works?
+        # for r, row in enumerate(self.elevation_data):
+        #     for c, val in enumerate(row):
+        #         # sanity check --> height of mount everest is ~8800 m
+        #         if val > 9000 or val < 0:
+        #             self.elevation_data[r][c] = self.fill_val - val/(1201*1201)
+        #             self.fill_val = np.mean(np.mean(np.array(self.elevation_data), axis=1))
+        #             print("-----------------REPLACED-----------------------")
+
 
     def calc_slope(self):
-        elevations = rd.rdarray(self.elevation_data, no_data=-1000)
+        elevations = rd.rdarray(self.elevation_data, no_data=self.fill_val)
         self.slope_data = np.array(rd.TerrainAttribute(elevations, attrib='slope_riserun'))
 
     def show_image(self):
-        elevations = rd.rdarray(self.elevation_data, no_data=-1000)
+        elevations = rd.rdarray(self.elevation_data, no_data=self.fill_val)
         plt.imshow(elevations, interpolation="bilinear", cmap="magma")
         plt.title(self.filename[:-4] + " Elevation Map")
         plt.colorbar()
         plt.show()
     
     def show_slope(self):
-        slopes = rd.rdarray(self.slope_data, no_data=-1000)
+        slopes = rd.rdarray(self.slope_data, no_data=self.fill_val)
         rd.rdShow(slopes, cmap = "magma")
         # plt.title(self.filename[:-4] + " Slope Map")
         # plt.colorbar()
         plt.show()
     
     def show_aspect(self):
-        elevations = rd.rdarray(self.elevation_data, no_data=-1000)
+        elevations = rd.rdarray(self.elevation_data, no_data=self.fill_val)
         aspect = rd.TerrainAttribute(elevations, attrib='aspect')
         rd.rdShow(aspect, axes=False, cmap='Blues', figsize=(8, 5.5))
         plt.show()
@@ -78,17 +89,11 @@ class ElevationConverter:
         # convert from seconds to x/y for array indexing
         x = int(lon_secs)
         y = 1201 - int(lat_secs)
-
-        # print(x)
-        # print(y)
-
-        max_slope = 0
         distance = 25
+
         area_slice = self.slope_data[ max(0, y-distance) : min(1200, y+distance) ]
         area_slice = area_slice[:, max(0, x-distance) : min(1200, x+distance)]
-        # plt.imshow(area_slice, cmap="magma")
-        # plt.colorbar()
-        # plt.show()
-        max_slope = max(max([i for i in j]) for j in area_slice)
-        # print("max value: ", max_slope)
+        max_slope = max([ max([i for i in j]) for j in area_slice ])
+        if max_slope < 0:
+            return -1
         return int(max_slope)
