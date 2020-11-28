@@ -73,14 +73,3 @@ for i, landslide in enumerate(entries):
 		continue
 	else: 
 		break
-
-	
-
-#for idx, api_call in enumerate(api_list):
-	# resp = requests.get(api_call)
-	# file_name = "XML Scraped/7-4-14Hpakan" + str(idx) + ".xml"
-	# file = open(file_name, 'w+')
-	
-	# dom = xml.dom.minidom.parse(file_name)
-	# pretty_xml_as_string = dom.toprettyxml()
-	# file.write(str(resp.content))
