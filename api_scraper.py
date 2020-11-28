@@ -66,10 +66,3 @@ for i, landslide in enumerate(entries):
 	f2 = open("finished.txt", "a")
 	f2.write(str(oID) + "..\n")
 	f2.close()
-
-	# print("Continue?")
-	# inside = input()
-	if True or inside == "y" or inside == "yes":
-		continue
-	else: 
-		break
