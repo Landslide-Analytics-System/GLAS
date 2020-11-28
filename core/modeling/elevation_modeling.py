@@ -93,7 +93,9 @@ class ElevationConverter:
 
         area_slice = self.slope_data[ max(0, y-distance) : min(1200, y+distance) ]
         area_slice = area_slice[:, max(0, x-distance) : min(1200, x+distance)]
-        max_slope = max([ max([i for i in j]) for j in area_slice ])
-        if max_slope < 0:
+
+        slope_to_return = np.percentile(area_slice.flatten(), 95)
+        # max_slope = max([ max([i for i in j]) for j in area_slice ])
+        if slope_to_return < 0:
             return -1
-        return int(max_slope)
+        return int(slope_to_return)
