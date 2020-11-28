@@ -249,108 +249,108 @@
 11451 39.02187712 70.36502778 2017/07/03 00:00:00+00 Tajikistan 0 0 mudslide rain medium unknown
 11516 38.2616 69.118 2007/04/03 00:00:00+00 Tajikistan 0 0 landslide earthquake medium above_river
 13003 39.978953999999995 70.56255999999999 2016/08/18 00:00:00+00 Tajikistan 0 0 mudslide rain medium urban
-10533 7.1623 80.4484 2016/05/18 00:00:00+00 Sri Lanka 101 0 mudslide monsoon very_large unknown
-5227 6.702272807000001 80.38461313 2017/05/26 00:00:00+00 Sri Lanka 46 0 landslide monsoon large unknown
-1685 6.5185872510000005 80.18135876 2017/05/26 00:00:00+00 Sri Lanka 38 0 landslide continuous_rain large natural_slope
-1394 6.7631 81.0209 2014/10/29 00:00:00+00 Sri Lanka 37 0 mudslide monsoon large deforested_slope
-5330 7.1306 80.4548 2016/05/17 00:00:00+00 Sri Lanka 13 0 landslide continuous_rain large natural_slope
-5223 6.093508095 80.60687667 2017/05/25 00:00:00+00 Sri Lanka 9 0 landslide rain medium urban
-9850 7.021 80.5913 2015/09/25 00:00:00+00 Sri Lanka 7 0 landslide downpour medium unknown
-11078 7.0543 80.693 2015/09/25 00:00:00+00 Sri Lanka 7 1 landslide downpour medium unknown
-12969 6.5261 80.1563 2014/06/01 00:00:00+00 Sri Lanka 7 0 landslide rain medium unknown
-3856 7.5694 80.5284 2012/12/18 00:00:00+00 Sri Lanka 6 0 landslide rain medium unknown
-4098 6.519724975 80.15402093 2017/05/25 00:00:00+00 Sri Lanka 6 0 landslide unknown medium urban
-4168 6.50950401 80.23142734 2017/05/25 00:00:00+00 Sri Lanka 6 0 landslide continuous_rain medium urban
-4487 6.7397 80.1744 2008/04/27 00:00:00+00 Sri Lanka 6 0 landslide tropical_cyclone medium unknown
-9286 6.99 81.0567 2014/12/26 00:00:00+00 Sri Lanka 6 0 mudslide downpour medium deforested_slope
-10754 6.639631955 80.64175069 2011/05/01 00:00:00+00 Sri Lanka 5 0 landslide downpour medium unknown
-3557 6.6206 80.1721 2014/06/01 00:00:00+00 Sri Lanka 4 0 landslide rain medium unknown
-6501 6.6643 80.3897 2008/05/30 00:00:00+00 Sri Lanka 4 0 complex downpour medium unknown
-5467 7.704408 80.77696999999999 2017/02/26 00:00:00+00 Sri Lanka 3 0 rock_fall construction medium engineered_slope
-8084 7.4227 80.6309 2010/11/26 00:00:00+00 Sri Lanka 3 0 landslide downpour medium unknown
-9173 6.9438 81.0684 2014/12/26 00:00:00+00 Sri Lanka 3 0 landslide downpour medium unknown
-9230 7.0205 80.5912 2015/09/25 00:00:00+00 Sri Lanka 3 0 landslide downpour medium unknown
-1132 6.754 80.9514 2014/12/26 00:00:00+00 Sri Lanka 2 0 other downpour medium other
-1818 6.9592220000000005 80.794842 2017/03/07 00:00:00+00 Sri Lanka 2 0 rock_fall construction small unknown
-3829 7.1145 80.314 2011/05/27 00:00:00+00 Sri Lanka 2 0 landslide downpour medium unknown
-4482 6.9634 80.3643 2008/04/28 00:00:00+00 Sri Lanka 2 0 landslide downpour medium unknown
-13014 6.9658 80.7577 2007/01/13 00:00:00+00 Sri Lanka 2 0 landslide rain large unknown
-13266 6.7043 80.3828 2011/05/27 00:00:00+00 Sri Lanka 2 0 landslide downpour medium unknown
-13403 6.9762 80.7748 2011/01/09 00:00:00+00 Sri Lanka 2 0 landslide monsoon medium unknown
-2675 6.9851 81.0556 2013/02/15 00:00:00+00 Sri Lanka 1 0 landslide rain medium unknown
-3722 6.879253446 80.44285988 2018/06/07 00:00:00+00 Sri Lanka 1 0 landslide downpour medium natural_slope
-6242 6.9554 80.9282 2011/02/01 00:00:00+00 Sri Lanka 1 0 mudslide downpour medium unknown
-6815 7.2532 80.6909 2011/01/09 00:00:00+00 Sri Lanka 1 0 landslide monsoon medium unknown
-10201 7.160382000000001 80.45979 2016/12/08 00:00:00+00 Sri Lanka 1 0 landslide unknown small unknown
-11946 6.2167 80.45 2008/12/12 00:00:00+00 Sri Lanka 1 0 landslide downpour medium unknown
-12919 7.2097 80.207 2011/05/27 00:00:00+00 Sri Lanka 1 0 landslide downpour medium unknown
-13369 6.0103 80.362 2016/05/29 00:00:00+00 Sri Lanka 1 2 rock_fall rain small mine
-212 7.4239 80.6104 2011/01/09 00:00:00+00 Sri Lanka 0 0 debris_flow monsoon medium above_road
-719 7.332880637000001 80.61756992 2018/05/14 00:00:00+00 Sri Lanka 0 0 rock_fall rain small above_road
-988 7.4695 80.6121 2011/01/09 00:00:00+00 Sri Lanka 0 0 landslide monsoon medium unknown
-1184 6.686 80.3874 2010/05/19 00:00:00+00 Sri Lanka 0 0 landslide tropical_cyclone medium unknown
-1262 7.2558 80.3019 2010/04/29 00:00:00+00 Sri Lanka 0 0 landslide rain medium unknown
-1548 6.8894 81.0402 2011/01/06 00:00:00+00 Sri Lanka 0 0 landslide downpour medium unknown
-1651 6.7374 80.9568 2015/04/20 00:00:00+00 Sri Lanka 0 0 landslide rain large natural_slope
-1870 7.0329999999999995 81.0673 2011/02/07 00:00:00+00 Sri Lanka 0 0 landslide downpour medium unknown
-2159 6.9315 81.1752 2011/02/11 00:00:00+00 Sri Lanka 0 0 landslide continuous_rain medium unknown
-2258 7.6235 80.6349 2011/02/07 00:00:00+00 Sri Lanka 0 0 landslide downpour medium unknown
-3475 6.7646 80.8682 2011/01/11 00:00:00+00 Sri Lanka 0 0 landslide downpour medium unknown
-3769 6.9698 81.039 2010/10/03 00:00:00+00 Sri Lanka 0 0 landslide downpour medium unknown
-3793 6.8196 80.8448 2013/05/04 00:00:00+00 Sri Lanka 0 0 landslide rain medium unknown
-4169 6.260792736 80.49138664 2017/05/26 00:00:00+00 Sri Lanka 0 0 landslide continuous_rain medium above_road
-4181 7.0381 81.1079 2011/02/07 00:00:00+00 Sri Lanka 0 0 landslide downpour medium unknown
-4240 6.1454 80.4119 2007/11/06 00:00:00+00 Sri Lanka 0 0 landslide rain medium unknown
-4614 7.1855 80.7675 2015/02/14 00:00:00+00 Sri Lanka 0 0 landslide downpour small retaining_wall
-5346 6.9769 80.7816 2011/01/09 00:00:00+00 Sri Lanka 0 0 landslide monsoon medium unknown
-5358 6.9366 80.6953 2012/11/02 00:00:00+00 Sri Lanka 0 0 landslide tropical_cyclone medium unknown
-5404 6.9935 81.0473 2007/12/24 00:00:00+00 Sri Lanka 0 0 landslide monsoon medium unknown
-5524 6.965074 80.516389 2018/05/21 00:00:00+00 Sri Lanka 0 0 landslide downpour small below_road
-5604 7.4685 80.6201 2013/02/15 00:00:00+00 Sri Lanka 0 0 landslide rain medium unknown
-5748 6.586835000000001 80.16048599999999 2017/05/26 00:00:00+00 Sri Lanka 0 0 landslide continuous_rain medium urban
-6062 6.0327 80.2174 2007/05/04 00:00:00+00 Sri Lanka 0 0 landslide rain medium unknown
-6484 6.9794 81.071 2011/02/01 00:00:00+00 Sri Lanka 0 0 landslide downpour small unknown
-6680 6.9793 80.4562 2016/08/07 00:00:00+00 Sri Lanka 0 0 landslide construction medium mine
-7020 6.8745 81.0455 2014/12/27 00:00:00+00 Sri Lanka 0 0 landslide downpour medium unknown
-7650 7.2805 80.6136 2010/12/04 00:00:00+00 Sri Lanka 0 0 landslide downpour medium unknown
-7679 6.9025 80.9083 2010/11/24 00:00:00+00 Sri Lanka 0 0 landslide downpour medium unknown
-7900 7.2753 81.0714 2011/02/07 00:00:00+00 Sri Lanka 0 0 landslide downpour medium unknown
-7919 7.6447 80.8147 2011/02/07 00:00:00+00 Sri Lanka 0 0 landslide downpour medium unknown
-8363 6.957291003 81.12046509 2011/02/17 00:00:00+00 Sri Lanka 0 0 landslide continuous_rain medium unknown
-8767 7.2853 80.4829 2011/04/22 00:00:00+00 Sri Lanka 0 0 rock_fall downpour medium unknown
-9007 7.6192 80.6405 2011/02/07 00:00:00+00 Sri Lanka 0 0 landslide downpour medium unknown
-9060 7.5206 80.7014 2011/02/08 00:00:00+00 Sri Lanka 0 0 landslide downpour medium unknown
-9148 7.0022 80.703 2010/05/19 00:00:00+00 Sri Lanka 0 0 debris_flow tropical_cyclone medium unknown
-9160 7.4678 80.6241 2011/02/01 00:00:00+00 Sri Lanka 0 0 landslide downpour medium unknown
-9457 7.2943 80.854 2014/10/26 00:00:00+00 Sri Lanka 0 1 landslide rain medium above_road
-9963 7.159883 80.562102 2016/11/18 00:00:00+00 Sri Lanka 0 0 landslide rain medium ...
-10057 7.0808 80.7354 2011/04/23 00:00:00+00 Sri Lanka 0 0 landslide downpour medium unknown
-10315 7.418396315 80.60846422 2010/04/27 00:00:00+00 Sri Lanka 0 0 landslide downpour medium unknown
-10483 7.4237 80.6104 2010/11/26 00:00:00+00 Sri Lanka 0 0 landslide downpour medium above_road
-11472 6.765405416 80.86815571 2018/05/03 00:00:00+00 Sri Lanka 0 0 debris_flow rain medium above_road
-12097 6.8066 80.9779 2010/10/03 00:00:00+00 Sri Lanka 0 0 landslide downpour medium unknown
-12117 6.973059881 81.08551842 2011/04/19 00:00:00+00 Sri Lanka 0 0 landslide downpour small above_road
-12239 7.1907 80.0317 2008/05/01 00:00:00+00 Sri Lanka 0 0 landslide downpour medium unknown
-12402 6.8334 80.9933 2011/02/11 00:00:00+00 Sri Lanka 0 0 landslide continuous_rain medium unknown
-12426 6.9565 81.0243 2011/02/01 00:00:00+00 Sri Lanka 0 0 landslide downpour medium unknown
-12991 7.9329 81.0081 2011/01/09 00:00:00+00 Sri Lanka 0 0 landslide downpour medium unknown
-13055 7.087999999999999 80.6517 2011/04/23 00:00:00+00 Sri Lanka 0 0 landslide downpour medium unknown
-13216 6.9167 81.0333 2011/02/23 00:00:00+00 Sri Lanka 0 0 landslide downpour medium unknown
-13347 6.9734 81.0836 2011/02/20 00:00:00+00 Sri Lanka 0 0 landslide continuous_rain medium unknown
-13406 6.968 80.9486 2011/03/14 00:00:00+00 Sri Lanka 0 0 landslide downpour medium unknown
-13468 6.973070057 81.08552027 2011/02/14 00:00:00+00 Sri Lanka 0 0 landslide continuous_rain medium above_road
-6069 37.5685 126.9811 2011/07/27 00:00:00+00 South Korea 59 0 mudslide downpour large unknown
-4632 37.4808 126.9936 2011/07/27 00:00:00+00 South Korea 18 0 mudslide downpour large unknown
-9443 38.122 128.0 2008/07/24 00:00:00+00 South Korea 3 0 mudslide downpour medium unknown
-12826 35.5038 128.7464 2011/07/09 00:00:00+00 South Korea 3 0 landslide downpour medium unknown
-2962 36.98563766 127.2486211 2017/07/09 00:00:00+00 South Korea 2 0 landslide downpour small above_road
-8384 34.8679 126.991 2011/07/09 00:00:00+00 South Korea 2 0 landslide downpour medium unknown
-9502 36.98 128.66 2008/07/25 00:00:00+00 South Korea 2 0 landslide downpour medium unknown
-207 37.4138 127.5183 2011/06/29 00:00:00+00 South Korea 1 0 landslide downpour medium unknown
-9902 35.9196 128.2829 2012/09/17 00:00:00+00 South Korea 1 0 landslide downpour medium unknown
-11009 37.5665 126.978 2011/06/29 00:00:00+00 South Korea 1 3 landslide monsoon medium unknown
-4741 37.5666 126.9778 2011/07/15 00:00:00+00 South Korea 0 0 debris_flow rain large unknown
-12857 37.0109 129.0783 2016/07/04 00:00:00+00 South Korea 0 0 rock_fall downpour medium above_road
+10533 7.1623 80.4484 2016/05/18 00:00:00+00 Sri_Lanka 101 0 mudslide monsoon very_large unknown
+5227 6.702272807000001 80.38461313 2017/05/26 00:00:00+00 Sri_Lanka 46 0 landslide monsoon large unknown
+1685 6.5185872510000005 80.18135876 2017/05/26 00:00:00+00 Sri_Lanka 38 0 landslide continuous_rain large natural_slope
+1394 6.7631 81.0209 2014/10/29 00:00:00+00 Sri_Lanka 37 0 mudslide monsoon large deforested_slope
+5330 7.1306 80.4548 2016/05/17 00:00:00+00 Sri_Lanka 13 0 landslide continuous_rain large natural_slope
+5223 6.093508095 80.60687667 2017/05/25 00:00:00+00 Sri_Lanka 9 0 landslide rain medium urban
+9850 7.021 80.5913 2015/09/25 00:00:00+00 Sri_Lanka 7 0 landslide downpour medium unknown
+11078 7.0543 80.693 2015/09/25 00:00:00+00 Sri_Lanka 7 1 landslide downpour medium unknown
+12969 6.5261 80.1563 2014/06/01 00:00:00+00 Sri_Lanka 7 0 landslide rain medium unknown
+3856 7.5694 80.5284 2012/12/18 00:00:00+00 Sri_Lanka 6 0 landslide rain medium unknown
+4098 6.519724975 80.15402093 2017/05/25 00:00:00+00 Sri_Lanka 6 0 landslide unknown medium urban
+4168 6.50950401 80.23142734 2017/05/25 00:00:00+00 Sri_Lanka 6 0 landslide continuous_rain medium urban
+4487 6.7397 80.1744 2008/04/27 00:00:00+00 Sri_Lanka 6 0 landslide tropical_cyclone medium unknown
+9286 6.99 81.0567 2014/12/26 00:00:00+00 Sri_Lanka 6 0 mudslide downpour medium deforested_slope
+10754 6.639631955 80.64175069 2011/05/01 00:00:00+00 Sri_Lanka 5 0 landslide downpour medium unknown
+3557 6.6206 80.1721 2014/06/01 00:00:00+00 Sri_Lanka 4 0 landslide rain medium unknown
+6501 6.6643 80.3897 2008/05/30 00:00:00+00 Sri_Lanka 4 0 complex downpour medium unknown
+5467 7.704408 80.77696999999999 2017/02/26 00:00:00+00 Sri_Lanka 3 0 rock_fall construction medium engineered_slope
+8084 7.4227 80.6309 2010/11/26 00:00:00+00 Sri_Lanka 3 0 landslide downpour medium unknown
+9173 6.9438 81.0684 2014/12/26 00:00:00+00 Sri_Lanka 3 0 landslide downpour medium unknown
+9230 7.0205 80.5912 2015/09/25 00:00:00+00 Sri_Lanka 3 0 landslide downpour medium unknown
+1132 6.754 80.9514 2014/12/26 00:00:00+00 Sri_Lanka 2 0 other downpour medium other
+1818 6.9592220000000005 80.794842 2017/03/07 00:00:00+00 Sri_Lanka 2 0 rock_fall construction small unknown
+3829 7.1145 80.314 2011/05/27 00:00:00+00 Sri_Lanka 2 0 landslide downpour medium unknown
+4482 6.9634 80.3643 2008/04/28 00:00:00+00 Sri_Lanka 2 0 landslide downpour medium unknown
+13014 6.9658 80.7577 2007/01/13 00:00:00+00 Sri_Lanka 2 0 landslide rain large unknown
+13266 6.7043 80.3828 2011/05/27 00:00:00+00 Sri_Lanka 2 0 landslide downpour medium unknown
+13403 6.9762 80.7748 2011/01/09 00:00:00+00 Sri_Lanka 2 0 landslide monsoon medium unknown
+2675 6.9851 81.0556 2013/02/15 00:00:00+00 Sri_Lanka 1 0 landslide rain medium unknown
+3722 6.879253446 80.44285988 2018/06/07 00:00:00+00 Sri_Lanka 1 0 landslide downpour medium natural_slope
+6242 6.9554 80.9282 2011/02/01 00:00:00+00 Sri_Lanka 1 0 mudslide downpour medium unknown
+6815 7.2532 80.6909 2011/01/09 00:00:00+00 Sri_Lanka 1 0 landslide monsoon medium unknown
+10201 7.160382000000001 80.45979 2016/12/08 00:00:00+00 Sri_Lanka 1 0 landslide unknown small unknown
+11946 6.2167 80.45 2008/12/12 00:00:00+00 Sri_Lanka 1 0 landslide downpour medium unknown
+12919 7.2097 80.207 2011/05/27 00:00:00+00 Sri_Lanka 1 0 landslide downpour medium unknown
+13369 6.0103 80.362 2016/05/29 00:00:00+00 Sri_Lanka 1 2 rock_fall rain small mine
+212 7.4239 80.6104 2011/01/09 00:00:00+00 Sri_Lanka 0 0 debris_flow monsoon medium above_road
+719 7.332880637000001 80.61756992 2018/05/14 00:00:00+00 Sri_Lanka 0 0 rock_fall rain small above_road
+988 7.4695 80.6121 2011/01/09 00:00:00+00 Sri_Lanka 0 0 landslide monsoon medium unknown
+1184 6.686 80.3874 2010/05/19 00:00:00+00 Sri_Lanka 0 0 landslide tropical_cyclone medium unknown
+1262 7.2558 80.3019 2010/04/29 00:00:00+00 Sri_Lanka 0 0 landslide rain medium unknown
+1548 6.8894 81.0402 2011/01/06 00:00:00+00 Sri_Lanka 0 0 landslide downpour medium unknown
+1651 6.7374 80.9568 2015/04/20 00:00:00+00 Sri_Lanka 0 0 landslide rain large natural_slope
+1870 7.0329999999999995 81.0673 2011/02/07 00:00:00+00 Sri_Lanka 0 0 landslide downpour medium unknown
+2159 6.9315 81.1752 2011/02/11 00:00:00+00 Sri_Lanka 0 0 landslide continuous_rain medium unknown
+2258 7.6235 80.6349 2011/02/07 00:00:00+00 Sri_Lanka 0 0 landslide downpour medium unknown
+3475 6.7646 80.8682 2011/01/11 00:00:00+00 Sri_Lanka 0 0 landslide downpour medium unknown
+3769 6.9698 81.039 2010/10/03 00:00:00+00 Sri_Lanka 0 0 landslide downpour medium unknown
+3793 6.8196 80.8448 2013/05/04 00:00:00+00 Sri_Lanka 0 0 landslide rain medium unknown
+4169 6.260792736 80.49138664 2017/05/26 00:00:00+00 Sri_Lanka 0 0 landslide continuous_rain medium above_road
+4181 7.0381 81.1079 2011/02/07 00:00:00+00 Sri_Lanka 0 0 landslide downpour medium unknown
+4240 6.1454 80.4119 2007/11/06 00:00:00+00 Sri_Lanka 0 0 landslide rain medium unknown
+4614 7.1855 80.7675 2015/02/14 00:00:00+00 Sri_Lanka 0 0 landslide downpour small retaining_wall
+5346 6.9769 80.7816 2011/01/09 00:00:00+00 Sri_Lanka 0 0 landslide monsoon medium unknown
+5358 6.9366 80.6953 2012/11/02 00:00:00+00 Sri_Lanka 0 0 landslide tropical_cyclone medium unknown
+5404 6.9935 81.0473 2007/12/24 00:00:00+00 Sri_Lanka 0 0 landslide monsoon medium unknown
+5524 6.965074 80.516389 2018/05/21 00:00:00+00 Sri_Lanka 0 0 landslide downpour small below_road
+5604 7.4685 80.6201 2013/02/15 00:00:00+00 Sri_Lanka 0 0 landslide rain medium unknown
+5748 6.586835000000001 80.16048599999999 2017/05/26 00:00:00+00 Sri_Lanka 0 0 landslide continuous_rain medium urban
+6062 6.0327 80.2174 2007/05/04 00:00:00+00 Sri_Lanka 0 0 landslide rain medium unknown
+6484 6.9794 81.071 2011/02/01 00:00:00+00 Sri_Lanka 0 0 landslide downpour small unknown
+6680 6.9793 80.4562 2016/08/07 00:00:00+00 Sri_Lanka 0 0 landslide construction medium mine
+7020 6.8745 81.0455 2014/12/27 00:00:00+00 Sri_Lanka 0 0 landslide downpour medium unknown
+7650 7.2805 80.6136 2010/12/04 00:00:00+00 Sri_Lanka 0 0 landslide downpour medium unknown
+7679 6.9025 80.9083 2010/11/24 00:00:00+00 Sri_Lanka 0 0 landslide downpour medium unknown
+7900 7.2753 81.0714 2011/02/07 00:00:00+00 Sri_Lanka 0 0 landslide downpour medium unknown
+7919 7.6447 80.8147 2011/02/07 00:00:00+00 Sri_Lanka 0 0 landslide downpour medium unknown
+8363 6.957291003 81.12046509 2011/02/17 00:00:00+00 Sri_Lanka 0 0 landslide continuous_rain medium unknown
+8767 7.2853 80.4829 2011/04/22 00:00:00+00 Sri_Lanka 0 0 rock_fall downpour medium unknown
+9007 7.6192 80.6405 2011/02/07 00:00:00+00 Sri_Lanka 0 0 landslide downpour medium unknown
+9060 7.5206 80.7014 2011/02/08 00:00:00+00 Sri_Lanka 0 0 landslide downpour medium unknown
+9148 7.0022 80.703 2010/05/19 00:00:00+00 Sri_Lanka 0 0 debris_flow tropical_cyclone medium unknown
+9160 7.4678 80.6241 2011/02/01 00:00:00+00 Sri_Lanka 0 0 landslide downpour medium unknown
+9457 7.2943 80.854 2014/10/26 00:00:00+00 Sri_Lanka 0 1 landslide rain medium above_road
+9963 7.159883 80.562102 2016/11/18 00:00:00+00 Sri_Lanka 0 0 landslide rain medium ...
+10057 7.0808 80.7354 2011/04/23 00:00:00+00 Sri_Lanka 0 0 landslide downpour medium unknown
+10315 7.418396315 80.60846422 2010/04/27 00:00:00+00 Sri_Lanka 0 0 landslide downpour medium unknown
+10483 7.4237 80.6104 2010/11/26 00:00:00+00 Sri_Lanka 0 0 landslide downpour medium above_road
+11472 6.765405416 80.86815571 2018/05/03 00:00:00+00 Sri_Lanka 0 0 debris_flow rain medium above_road
+12097 6.8066 80.9779 2010/10/03 00:00:00+00 Sri_Lanka 0 0 landslide downpour medium unknown
+12117 6.973059881 81.08551842 2011/04/19 00:00:00+00 Sri_Lanka 0 0 landslide downpour small above_road
+12239 7.1907 80.0317 2008/05/01 00:00:00+00 Sri_Lanka 0 0 landslide downpour medium unknown
+12402 6.8334 80.9933 2011/02/11 00:00:00+00 Sri_Lanka 0 0 landslide continuous_rain medium unknown
+12426 6.9565 81.0243 2011/02/01 00:00:00+00 Sri_Lanka 0 0 landslide downpour medium unknown
+12991 7.9329 81.0081 2011/01/09 00:00:00+00 Sri_Lanka 0 0 landslide downpour medium unknown
+13055 7.087999999999999 80.6517 2011/04/23 00:00:00+00 Sri_Lanka 0 0 landslide downpour medium unknown
+13216 6.9167 81.0333 2011/02/23 00:00:00+00 Sri_Lanka 0 0 landslide downpour medium unknown
+13347 6.9734 81.0836 2011/02/20 00:00:00+00 Sri_Lanka 0 0 landslide continuous_rain medium unknown
+13406 6.968 80.9486 2011/03/14 00:00:00+00 Sri_Lanka 0 0 landslide downpour medium unknown
+13468 6.973070057 81.08552027 2011/02/14 00:00:00+00 Sri_Lanka 0 0 landslide continuous_rain medium above_road
+6069 37.5685 126.9811 2011/07/27 00:00:00+00 South_Korea 59 0 mudslide downpour large unknown
+4632 37.4808 126.9936 2011/07/27 00:00:00+00 South_Korea 18 0 mudslide downpour large unknown
+9443 38.122 128.0 2008/07/24 00:00:00+00 South_Korea 3 0 mudslide downpour medium unknown
+12826 35.5038 128.7464 2011/07/09 00:00:00+00 South_Korea 3 0 landslide downpour medium unknown
+2962 36.98563766 127.2486211 2017/07/09 00:00:00+00 South_Korea 2 0 landslide downpour small above_road
+8384 34.8679 126.991 2011/07/09 00:00:00+00 South_Korea 2 0 landslide downpour medium unknown
+9502 36.98 128.66 2008/07/25 00:00:00+00 South_Korea 2 0 landslide downpour medium unknown
+207 37.4138 127.5183 2011/06/29 00:00:00+00 South_Korea 1 0 landslide downpour medium unknown
+9902 35.9196 128.2829 2012/09/17 00:00:00+00 South_Korea 1 0 landslide downpour medium unknown
+11009 37.5665 126.978 2011/06/29 00:00:00+00 South_Korea 1 3 landslide monsoon medium unknown
+4741 37.5666 126.9778 2011/07/15 00:00:00+00 South_Korea 0 0 debris_flow rain large unknown
+12857 37.0109 129.0783 2016/07/04 00:00:00+00 South_Korea 0 0 rock_fall downpour medium above_road
 8414 1.3969999999999998 103.87200000000001 2008/09/03 00:00:00+00 Singapore 0 0 mudslide unknown small urban
 10832 7.4649 126.1847 2012/12/04 00:00:00+00 Philippines 430 0 mudslide tropical_cyclone very_large natural_slope
 10840 16.4664 120.5746 2009/10/09 00:00:00+00 Philippines 104 0 landslide tropical_cyclone large unknown
@@ -1095,35 +1095,35 @@
 13467 10.1203 123.6028 2008/10/14 00:00:00+00 Philippines 0 0 complex downpour medium unknown
 13478 16.3727 120.6074 2011/05/27 00:00:00+00 Philippines 0 0 landslide tropical_cyclone small unknown
 13479 13.5983 124.1003 2016/10/15 00:00:00+00 Philippines 0 0 landslide tropical_cyclone medium unknown
-2309 -5.8556 142.9354 2012/01/24 00:00:00+00 Papua New Guinea 25 0 mudslide continuous_rain large mine
-705 -6.2899 145.8593 2008/12/04 00:00:00+00 Papua New Guinea 10 0 landslide downpour medium unknown
-12412 -6.082999999999999 145.1667 2013/11/02 00:00:00+00 Papua New Guinea 9 3 mudslide downpour large unknown
-1210 -6.7663 146.4261 2016/10/16 00:00:00+00 Papua New Guinea 7 0 landslide downpour medium unknown
-2389 -6.084 145.208 2009/03/04 00:00:00+00 Papua New Guinea 7 0 landslide downpour medium unknown
-7472 -6.3 147.6 2008/05/24 00:00:00+00 Papua New Guinea 4 0 landslide downpour large unknown
-12945 -7.149976033 146.5810575 2016/12/24 00:00:00+00 Papua New Guinea 4 0 landslide rain medium mine
-3133 -6.1415 143.6517 2012/09/11 00:00:00+00 Papua New Guinea 3 0 landslide downpour medium unknown
-6255 -5.270867658 144.54187180000002 2018/06/02 00:00:00+00 Papua New Guinea 2 1 rock_fall no_apparent_trigger medium natural_slope
-10140 -5.857686 144.236673 2016/10/31 00:00:00+00 Papua New Guinea 2 2 landslide rain ... ...
-795 -6.3494 147.1646 2007/11/25 00:00:00+00 Papua New Guinea 1 0 landslide rain medium unknown
-7884 -8.907973013 147.7119686 2016/07/01 00:00:00+00 Papua New Guinea 1 0 mudslide downpour medium unknown
-974 -5.8457 144.2004 2015/07/01 00:00:00+00 Papua New Guinea 0 0 rock_fall unknown small unknown
-1432 -5.8673 145.0996 2016/10/18 00:00:00+00 Papua New Guinea 0 0 landslide rain medium above_road
-2472 -6.1781 143.6751 2015/07/04 00:00:00+00 Papua New Guinea 0 0 landslide unknown medium below_road
-3594 -9.0087 148.1139 2007/11/23 00:00:00+00 Papua New Guinea 0 0 debris_flow rain large unknown
-3842 -6.1014 145.0722 2014/12/22 00:00:00+00 Papua New Guinea 0 0 landslide continuous_rain medium above_road
-6527 -6.007163731 144.95909509999998 2017/01/09 00:00:00+00 Papua New Guinea 0 0 landslide downpour medium below_road
-6540 -6.082705342000001 145.2061006 2017/01/09 00:00:00+00 Papua New Guinea 0 0 landslide downpour small above_road
-6763 -6.150862403 143.6461059 2017/05/17 00:00:00+00 Papua New Guinea 0 0 landslide unknown small natural_slope
-6929 -6.0377 144.9642 2008/04/09 00:00:00+00 Papua New Guinea 0 0 landslide rain large unknown
-8574 -7.241780411000001 146.47640780000003 2017/04/18 00:00:00+00 Papua New Guinea 0 0 landslide rain small above_road
-8706 -7.0607 147.0348 2010/07/13 00:00:00+00 Papua New Guinea 0 0 mudslide downpour medium unknown
-9672 -6.082999999999999 145.1667 2013/11/03 00:00:00+00 Papua New Guinea 0 0 mudslide downpour medium unknown
-10141 -6.095327332999999 145.02236000000002 2017/02/19 00:00:00+00 Papua New Guinea 0 0 landslide rain very_large above_road
-10142 -6.502260037 147.0617104 2017/01/10 00:00:00+00 Papua New Guinea 0 0 landslide downpour large natural_slope
-10789 -6.0609 142.8548 2013/01/28 00:00:00+00 Papua New Guinea 0 0 landslide rain medium unknown
-12886 -4.2201 142.8206 2015/07/21 00:00:00+00 Papua New Guinea 0 2 riverbank_collapse unknown medium above_river
-13429 -6.0356 144.9513 2016/10/19 00:00:00+00 Papua New Guinea 0 0 landslide rain medium below_road
+2309 -5.8556 142.9354 2012/01/24 00:00:00+00 Papua_New_Guinea 25 0 mudslide continuous_rain large mine
+705 -6.2899 145.8593 2008/12/04 00:00:00+00 Papua_New_Guinea 10 0 landslide downpour medium unknown
+12412 -6.082999999999999 145.1667 2013/11/02 00:00:00+00 Papua_New_Guinea 9 3 mudslide downpour large unknown
+1210 -6.7663 146.4261 2016/10/16 00:00:00+00 Papua_New_Guinea 7 0 landslide downpour medium unknown
+2389 -6.084 145.208 2009/03/04 00:00:00+00 Papua_New_Guinea 7 0 landslide downpour medium unknown
+7472 -6.3 147.6 2008/05/24 00:00:00+00 Papua_New_Guinea 4 0 landslide downpour large unknown
+12945 -7.149976033 146.5810575 2016/12/24 00:00:00+00 Papua_New_Guinea 4 0 landslide rain medium mine
+3133 -6.1415 143.6517 2012/09/11 00:00:00+00 Papua_New_Guinea 3 0 landslide downpour medium unknown
+6255 -5.270867658 144.54187180000002 2018/06/02 00:00:00+00 Papua_New_Guinea 2 1 rock_fall no_apparent_trigger medium natural_slope
+10140 -5.857686 144.236673 2016/10/31 00:00:00+00 Papua_New_Guinea 2 2 landslide rain ... ...
+795 -6.3494 147.1646 2007/11/25 00:00:00+00 Papua_New_Guinea 1 0 landslide rain medium unknown
+7884 -8.907973013 147.7119686 2016/07/01 00:00:00+00 Papua_New_Guinea 1 0 mudslide downpour medium unknown
+974 -5.8457 144.2004 2015/07/01 00:00:00+00 Papua_New_Guinea 0 0 rock_fall unknown small unknown
+1432 -5.8673 145.0996 2016/10/18 00:00:00+00 Papua_New_Guinea 0 0 landslide rain medium above_road
+2472 -6.1781 143.6751 2015/07/04 00:00:00+00 Papua_New_Guinea 0 0 landslide unknown medium below_road
+3594 -9.0087 148.1139 2007/11/23 00:00:00+00 Papua_New_Guinea 0 0 debris_flow rain large unknown
+3842 -6.1014 145.0722 2014/12/22 00:00:00+00 Papua_New_Guinea 0 0 landslide continuous_rain medium above_road
+6527 -6.007163731 144.95909509999998 2017/01/09 00:00:00+00 Papua_New_Guinea 0 0 landslide downpour medium below_road
+6540 -6.082705342000001 145.2061006 2017/01/09 00:00:00+00 Papua_New_Guinea 0 0 landslide downpour small above_road
+6763 -6.150862403 143.6461059 2017/05/17 00:00:00+00 Papua_New_Guinea 0 0 landslide unknown small natural_slope
+6929 -6.0377 144.9642 2008/04/09 00:00:00+00 Papua_New_Guinea 0 0 landslide rain large unknown
+8574 -7.241780411000001 146.47640780000003 2017/04/18 00:00:00+00 Papua_New_Guinea 0 0 landslide rain small above_road
+8706 -7.0607 147.0348 2010/07/13 00:00:00+00 Papua_New_Guinea 0 0 mudslide downpour medium unknown
+9672 -6.082999999999999 145.1667 2013/11/03 00:00:00+00 Papua_New_Guinea 0 0 mudslide downpour medium unknown
+10141 -6.095327332999999 145.02236000000002 2017/02/19 00:00:00+00 Papua_New_Guinea 0 0 landslide rain very_large above_road
+10142 -6.502260037 147.0617104 2017/01/10 00:00:00+00 Papua_New_Guinea 0 0 landslide downpour large natural_slope
+10789 -6.0609 142.8548 2013/01/28 00:00:00+00 Papua_New_Guinea 0 0 landslide rain medium unknown
+12886 -4.2201 142.8206 2015/07/21 00:00:00+00 Papua_New_Guinea 0 2 riverbank_collapse unknown medium above_river
+13429 -6.0356 144.9513 2016/10/19 00:00:00+00 Papua_New_Guinea 0 0 landslide rain medium below_road
 98 35.5063 73.8056 2016/04/03 00:00:00+00 Pakistan 71 0 landslide continuous_rain large unknown
 11918 35.049 72.7541 2010/07/30 00:00:00+00 Pakistan 49 0 landslide downpour large unknown
 3509 35.0148 75.6213 2010/08/07 00:00:00+00 Pakistan 45 0 landslide downpour large unknown
@@ -1304,9 +1304,9 @@
 13225 36.0739 72.0406 2015/02/25 00:00:00+00 Pakistan 0 0 landslide snowfall_snowmelt medium above_road
 13292 34.785 73.5206 2016/10/01 00:00:00+00 Pakistan 0 0 landslide earthquake medium above_road
 13492 34.1577 73.8257 2015/04/14 00:00:00+00 Pakistan 0 0 landslide unknown medium above_road
-5013 39.9378 124.6807 2007/08/23 00:00:00+00 North Korea 0 0 landslide rain medium unknown
-5443 39.935 125.4071 2011/07/13 00:00:00+00 North Korea 0 0 landslide downpour medium unknown
-9249 39.0555 127.2536 2013/07/12 00:00:00+00 North Korea 0 0 landslide downpour medium unknown
+5013 39.9378 124.6807 2007/08/23 00:00:00+00 North_Korea 0 0 landslide rain medium unknown
+5443 39.935 125.4071 2011/07/13 00:00:00+00 North_Korea 0 0 landslide downpour medium unknown
+9249 39.0555 127.2536 2013/07/12 00:00:00+00 North_Korea 0 0 landslide downpour medium unknown
 346 28.2001 85.4611 2015/04/28 00:00:00+00 Nepal 250 0 mudslide snowfall_snowmelt large natural_slope
 13381 27.7702 85.8692 2014/08/02 00:00:00+00 Nepal 174 52 landslide continuous_rain large above_river
 6959 28.52206817 84.07696086 2012/05/05 00:00:00+00 Nepal 72 0 complex unknown large natural_slope
@@ -5854,19 +5854,19 @@
 2203 13.7934 102.8987 2016/10/16 00:00:00+00 Cambodia 3 0 rock_fall rain medium mine
 10668 12.856627 102.60828599999999 2016/11/26 00:00:00+00 Cambodia 2 0 rock_fall construction small engineered_slope
 2946 11.36244543 105.006749 2017/03/25 00:00:00+00 Cambodia 0 0 landslide other medium above_river
-7414 5.031000000000001 115.0668 2009/01/22 00:00:00+00 Brunei Darussalam 2 0 landslide downpour medium unknown
-1109 4.5864 115.1648 2010/01/18 00:00:00+00 Brunei Darussalam 0 0 landslide downpour medium unknown
-2611 4.9558 114.9881 2008/10/26 00:00:00+00 Brunei Darussalam 0 0 complex downpour medium unknown
-3840 4.8333 114.8333 2010/01/20 00:00:00+00 Brunei Darussalam 0 0 landslide downpour medium unknown
-4363 4.9879 114.9553 2008/10/26 00:00:00+00 Brunei Darussalam 0 0 complex downpour medium unknown
-6368 4.9721 114.9659 2010/08/20 00:00:00+00 Brunei Darussalam 0 0 landslide downpour medium unknown
-7226 4.9833 114.917 2007/01/08 00:00:00+00 Brunei Darussalam 0 0 landslide rain medium unknown
-7660 4.6401 114.4396 2008/01/03 00:00:00+00 Brunei Darussalam 0 0 landslide rain small unknown
-7739 4.9726 115.0182 2011/02/16 00:00:00+00 Brunei Darussalam 0 0 landslide downpour small unknown
-8086 4.678999999999999 114.5042 2011/01/25 00:00:00+00 Brunei Darussalam 0 0 landslide downpour medium unknown
-9290 4.8057 114.6671 2010/09/09 00:00:00+00 Brunei Darussalam 0 0 landslide downpour medium unknown
-12364 4.6967 114.7247 2011/06/07 00:00:00+00 Brunei Darussalam 0 0 landslide downpour small unknown
-13140 4.4999 114.6667 2007/02/11 00:00:00+00 Brunei Darussalam 0 0 landslide rain small unknown
+7414 5.031000000000001 115.0668 2009/01/22 00:00:00+00 Brunei_Darussalam 2 0 landslide downpour medium unknown
+1109 4.5864 115.1648 2010/01/18 00:00:00+00 Brunei_Darussalam 0 0 landslide downpour medium unknown
+2611 4.9558 114.9881 2008/10/26 00:00:00+00 Brunei_Darussalam 0 0 complex downpour medium unknown
+3840 4.8333 114.8333 2010/01/20 00:00:00+00 Brunei_Darussalam 0 0 landslide downpour medium unknown
+4363 4.9879 114.9553 2008/10/26 00:00:00+00 Brunei_Darussalam 0 0 complex downpour medium unknown
+6368 4.9721 114.9659 2010/08/20 00:00:00+00 Brunei_Darussalam 0 0 landslide downpour medium unknown
+7226 4.9833 114.917 2007/01/08 00:00:00+00 Brunei_Darussalam 0 0 landslide rain medium unknown
+7660 4.6401 114.4396 2008/01/03 00:00:00+00 Brunei_Darussalam 0 0 landslide rain small unknown
+7739 4.9726 115.0182 2011/02/16 00:00:00+00 Brunei_Darussalam 0 0 landslide downpour small unknown
+8086 4.678999999999999 114.5042 2011/01/25 00:00:00+00 Brunei_Darussalam 0 0 landslide downpour medium unknown
+9290 4.8057 114.6671 2010/09/09 00:00:00+00 Brunei_Darussalam 0 0 landslide downpour medium unknown
+12364 4.6967 114.7247 2011/06/07 00:00:00+00 Brunei_Darussalam 0 0 landslide downpour small unknown
+13140 4.4999 114.6667 2007/02/11 00:00:00+00 Brunei_Darussalam 0 0 landslide rain small unknown
 2656 26.7969 89.59100000000001 2008/06/07 00:00:00+00 Bhutan 12 0 complex rain medium unknown
 4858 27.4373 90.4678 2015/08/14 00:00:00+00 Bhutan 5 0 landslide mining medium mine
 13476 26.8599 89.3943 2010/07/21 00:00:00+00 Bhutan 3 0 landslide downpour medium unknown
@@ -6000,12 +6000,12 @@
 6092 37.50281087 70.44300821 2008/04/25 00:00:00+00 Afghanistan 0 0 landslide rain medium unknown
 7613 37.56106267 70.42633455 2010/05/17 00:00:00+00 Afghanistan 0 0 landslide downpour medium unknown
 10842 35.3047 69.5546 2014/03/31 00:00:00+00 Afghanistan 0 0 landslide rain small above_road
-8881 11.3 124.9667 2011/03/17 00:00:00+00   7 0 landslide downpour medium unknown
-2473 -0.6811 119.762 2007/01/31 00:00:00+00   6 0 landslide rain medium unknown
-277 0.7089 107.7503 2008/10/18 00:00:00+00   3 0 landslide rain medium unknown
-6738 13.2989 123.8 2007/11/19 00:00:00+00   3 0 landslide tropical_cyclone medium unknown
-2644 37.8505 140.9505 2014/03/28 00:00:00+00   1 0 mudslide construction small unknown
-9211 21.47819035 91.96737514 2015/09/01 00:00:00+00   1 0 landslide downpour medium above_road
-457 11.82556404 98.11535599 1970/01/01 00:00:00+00   0 0 landslide unknown ... ...
-5571 11.855 75.361 2007/07/20 00:00:00+00   0 0 landslide downpour medium unknown
-6574 4.8833 114.95 2008/11/05 00:00:00+00   0 0 landslide downpour medium unknown
+8881 11.3 124.9667 2011/03/17 00:00:00+00 _ 7 0 landslide downpour medium unknown
+2473 -0.6811 119.762 2007/01/31 00:00:00+00 _ 6 0 landslide rain medium unknown
+277 0.7089 107.7503 2008/10/18 00:00:00+00 _ 3 0 landslide rain medium unknown
+6738 13.2989 123.8 2007/11/19 00:00:00+00 _ 3 0 landslide tropical_cyclone medium unknown
+2644 37.8505 140.9505 2014/03/28 00:00:00+00 _ 1 0 mudslide construction small unknown
+9211 21.47819035 91.96737514 2015/09/01 00:00:00+00 _ 1 0 landslide downpour medium above_road
+457 11.82556404 98.11535599 1970/01/01 00:00:00+00 _ 0 0 landslide unknown ... ...
+5571 11.855 75.361 2007/07/20 00:00:00+00 _ 0 0 landslide downpour medium unknown
+6574 4.8833 114.95 2008/11/05 00:00:00+00 _ 0 0 landslide downpour medium unknown
