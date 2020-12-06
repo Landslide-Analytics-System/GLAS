@@ -1,0 +1,16 @@
+BINARY:
+    RF:
+        ACCURACY: 0.6512676056338028
+        array([[586, 284],
+            [335, 570]], dtype=int64)
+    SVC:
+        ACCURACY: 0.6276056338028169
+        array([[361, 101],
+        [560, 753]], dtype=int64)
+    KNN:
+        ACCURACY: 0.607887323943662
+        array([[753, 528],
+       [168, 326]], dtype=int64)
+
+SEVERITY:
+    
