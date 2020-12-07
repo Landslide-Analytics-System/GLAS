@@ -9,7 +9,7 @@ class LandslideScraper:
 		self.corner2 = [-10, 150]
 
 	def convert(self, field, func):
-		df[field] = df[field].apply(func)
+		self.df[field] = df[field].apply(func)
 
 	def filter(self):
 		self.df = df[(df.latitude >= corner2[0]) & (df.latitude <= corner1[0]) & (df.longitude >= corner1[1]) & (df.longitude <= corner2[1])]
