@@ -1,9 +1,9 @@
-reverse_filtered_landslide.txt
-finished.txt
+# Common data files
 *.hgt
 *.zip
-elevation_data/
-landslide_catalog/*.csv
+v1/data/elevation/elevation_data
+
+# OS and IDE files
 .DS_Store
 .vscode/
 
