@@ -1,6 +1,8 @@
 # Common data files
 *.hgt
 *.zip
+
+# v1 files
 v1/data/elevation/elevation_data
 
 # OS and IDE files
