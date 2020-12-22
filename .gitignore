@@ -1,6 +1,7 @@
 # Common data files
 *.hgt
 *.zip
+*.xml
 
 # v1 files
 v1/data/elevation/elevation_data
