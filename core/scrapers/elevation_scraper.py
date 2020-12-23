@@ -48,6 +48,7 @@ class ElevationScraper:
             fout.write(r.content)
 
     def downloadAll(self):
+        print("Downloading all files...")
         # make for loop to download all files
         for fileURL in tqdm(self.hgt_urls):
             if not os.path.isfile( os.path.join(self.base_dir, fileURL.split("/")[-1]) ):
@@ -64,8 +65,12 @@ class ElevationScraper:
             self.downloadFile(self.base_url + filename)
     
     def unzipAll(self):
-        hgt_files = os.listdir(self.base_dir)
-        for hgt_file in hgt_files:
+        print("Unzipping all files...")
+        hgt_files = [i for i in os.listdir(self.base_dir) if i[-4:] == ".zip"]
+
+        for hgt_file in tqdm(hgt_files):
             with zipfile.ZipFile(os.path.join(self.base_dir, hgt_file), "r") as zip_ref:
                 zip_ref.extractall(self.base_dir)
-                # os.remove( os.path.join(self.base_dir, hgt_file) )
+    
+    def cleanUp(self):
+        os.system("mv data/elevation/*.zip data/zipped_elevation/")
