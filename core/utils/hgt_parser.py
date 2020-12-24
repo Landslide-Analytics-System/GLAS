@@ -1,7 +1,7 @@
 import numpy as np
 from array import array
 
-def hgt_parser(filepath):
+def HGTParser(filepath):
         with open(filepath, 'rb') as fin:
             format = 'h'
             row_length = 1201

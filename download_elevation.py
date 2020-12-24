@@ -2,7 +2,7 @@ import os
 import kaggle
 
 kaggle.api.authenticate()
-kaggle.api.dataset_download_files("shreyj1729/srtmgl3", path="data/srtmgl3_kaggle", unzip=True)
+kaggle.api.dataset_download_files("shreyj1729/srtmgl3", path="data/elevation", unzip=True)
 # os.system("mv data/elevation/elevation*.zip data/elevation/")
 # os.rmdir("data/elevation/elevation")
 

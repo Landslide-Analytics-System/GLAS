@@ -1,6 +1,6 @@
 import os
 import numpy as np
-from ..utils.hgt_parser import hgt_parser
+from ..utils.hgt_parser import HGTParser
 import richdem as rd
 import matplotlib.pyplot as plt
 import contextlib
@@ -11,7 +11,7 @@ class MapGenerator():
     
     def loadData(self, filename):
         self.filename = filename
-        self.elevation_data = hgt_parser(os.path.join(self.base_dir, filename))
+        self.elevation_data = HGTParser(os.path.join(self.base_dir, filename))
         # self.fill_val = np.mean(np.mean(np.array(self.elevation_data), axis=1))
 
     def calcSlope(self, mode):
@@ -20,8 +20,11 @@ class MapGenerator():
 
         if not mode in ['slope_riserun', 'slope_percentage', 'slope_degrees', 'slope_radians']:
             print("Pass in one of " + ['slope_riserun', 'slope_percentage', 'slope_degrees', 'slope_radians'])
+            return
+
         self.elevation_filled = rd.rdarray(self.elevation_data, no_data=-9999)
         
+        # removes some of the annoying warning logs
         with contextlib.redirect_stdout(None):
             self.slope_data_numpy = np.array(rd.TerrainAttribute(self.elevation_filled, attrib=mode))
 
