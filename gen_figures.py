@@ -7,8 +7,8 @@
 # gen.showElevationMap()
 # gen.showSlopeMap()
 
-# todo: add argparse so we can do --global-elevation and --global-slope and --local N34E088.hgt and stuff
-
+# todo: add argparse so we can do --global-elevation --stride 100 and --global-slope and --local N34E088.hgt and stuff
+# import argparse
 
 from core.figures.global_srtm_map import GlobalMapGenerator
 

@@ -1,11 +1,11 @@
 import os
 import numpy as np
-from numpy.core.numerictypes import maximum_sctype
 from .srtm_map import MapGenerator
 from ..utils.hgt_parser import HGTParser
 from tqdm import tqdm
 import cv2
 import matplotlib.pyplot as plt
+import richdem as rd
 
 class GlobalMapGenerator():
     def __init__(self):
@@ -15,7 +15,6 @@ class GlobalMapGenerator():
         self.global_elevation_data = None
     
     def shrink(data, rows, cols):
-        # add code --> if 
         return data.reshape(rows, data.shape[0]/rows, cols, data.shape[1]/cols).sum(axis=1).sum(axis=2)
 
     def GenerateGlobalElevationMap(self, stride):
@@ -69,11 +68,14 @@ class GlobalMapGenerator():
                 print("lat: ", lat_bounds)
                 print("lon: ", lon_bounds)
         
-        plt.imshow(self.global_elevation_data, cmap="magma")
+        # TO IMPLEMENT: logarithmic colorbar scaling. See https://matplotlib.org/3.2.1/tutorials/colors/colormapnorms.html
+        plt.figure(figsize=(20,20))
+        plt.imshow(self.global_elevation_data, cmap="rainbow")
         plt.title("Global Elevation Heatmap")
         plt.colorbar()
+        np.save("figures/GlobalElevationMap.npy", self.global_elevation_data)
+        plt.savefig("figures/GlobalElevationMap.png", format = "png")
         plt.show()
-        plt.savefig("figures/GlobalElevationMap.png")
     
     def GenerateGlobalSlopeMap(self, stride):
         pass

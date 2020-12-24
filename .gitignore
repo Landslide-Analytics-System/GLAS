@@ -1,7 +1,11 @@
-# Common data files
+# Common data files and binaries
 *.hgt
 *.zip
 *.xml
+*.npy
+*.png
+*.jpg
+*.jpeg
 
 # v1 files
 v1/data/elevation/elevation_data
