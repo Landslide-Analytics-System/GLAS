@@ -2,7 +2,6 @@ import os
 import numpy as np
 import richdem as rd
 import matplotlib.pyplot as plt
-import struct
 from array import array
 
 class srtmParser(object):
