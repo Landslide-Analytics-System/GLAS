@@ -1,5 +1,6 @@
 import os
 import numpy as np
+from tqdm.utils import disp_trim
 from .srtm_map import MapGenerator
 from ..utils.hgt_parser import HGTParser
 from tqdm import tqdm
@@ -17,7 +18,7 @@ class GlobalMapGenerator():
     def shrink(data, rows, cols):
         return data.reshape(rows, data.shape[0]/rows, cols, data.shape[1]/cols).sum(axis=1).sum(axis=2)
 
-    def GenerateGlobalElevationMap(self, stride):
+    def GenerateGlobalMaps(self, stride):
         res = 1201//stride
         max_N = 59
         max_W = 180
@@ -56,7 +57,8 @@ class GlobalMapGenerator():
 
             # load in data from file as resized
             data = cv2.resize(HGTParser(os.path.join(self.base_dir, hgt_file)), (res, res))
-            
+            # data = np.array(rd.TerrainAttribute(rd.rdarray(data, no_data=-9999), "slope_riserun"))
+
             # generate bounds (x/y --> lon.lat for data from this file for the giant array)
             lat_bounds = [res*lat_trans, res*(lat_trans+1)]
             lon_bounds = [res*lon_trans, res*(lon_trans+1)]
@@ -67,15 +69,32 @@ class GlobalMapGenerator():
                 print("REFERENCE ERROR: " + hgt_file)
                 print("lat: ", lat_bounds)
                 print("lon: ", lon_bounds)
-        
-        # TO IMPLEMENT: logarithmic colorbar scaling. See https://matplotlib.org/3.2.1/tutorials/colors/colormapnorms.html
+            
+        self.global_slope_data = np.asarray(rd.TerrainAttribute(rd.rdarray(self.global_elevation_data, no_data=-9999), "slope_percentage"))
+
+    def ShowSaveElevation(self, filepath):
+        # TO IMPLEMENT:
+        # - logarithmic colorbar scaling or prefill oceans as -500 and color differently
+        # See https://matplotlib.org/3.2.1/tutorials/colors/colormapnorms.html
         plt.figure(figsize=(20,20))
-        plt.imshow(self.global_elevation_data, cmap="rainbow")
+        plt.imshow(self.global_elevation_data, cmap="jet")
+        plt.title("Global Elevation Heatmap (Non-Trimmed)")
+        plt.colorbar()
+        np.save(filepath+".npy", self.global_elevation_data)
+        plt.savefig(filepath+".png", format = "png", dpi=500)
+        plt.show()
+        # Look into rd.rdShow source code and replicate to save data/implement custom params. 
+        rd.rdShow(rd.rdarray(self.global_elevation_data, no_data=-9999), cmap="jet")
+        del self.global_elevation_data
+    
+    def ShowSaveSlope(self, filepath):
+        plt.imshow(self.global_slope_data)
+        plt.figure(figsize=(20,20))
+        plt.imshow(self.global_elevation_data, cmap="jet")
         plt.title("Global Elevation Heatmap")
         plt.colorbar()
-        np.save("figures/GlobalElevationMap.npy", self.global_elevation_data)
-        plt.savefig("figures/GlobalElevationMap.png", format = "png")
+        np.save(filepath+".npy", self.global_elevation_data)
+        plt.savefig(filepath+".png", format = "png", dpi=500)
         plt.show()
-    
-    def GenerateGlobalSlopeMap(self, stride):
-        pass
+        rd.rdShow(rd.rdarray(self.global_slope_data, no_data=-9999), cmap="jet")
+        del self.global_slope_data

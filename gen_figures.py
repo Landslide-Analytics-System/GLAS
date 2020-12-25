@@ -1,17 +1,27 @@
-# from core.figures.srtm_map import MapGenerator
-
-# gen = MapGenerator()
-# gen.loadData("N41W123.hgt")
-# # options are ['slope_riserun', 'slope_percentage', 'slope_degrees', 'slope_radians']
-# gen.calcSlope("slope_riserun")
-# gen.showElevationMap()
-# gen.showSlopeMap()
-
-# todo: add argparse so we can do --global-elevation --stride 100 and --global-slope and --local N34E088.hgt and stuff
-# import argparse
-
+from core.figures.srtm_map import MapGenerator
 from core.figures.global_srtm_map import GlobalMapGenerator
+import argparse
 
-gen = GlobalMapGenerator()
+parser = argparse.ArgumentParser()
+parser.add_argument("--world", action="store_true")
+parser.add_argument("--local", type=str)
+args = parser.parse_args()
+
+print(args)
+assert args.world != args.local, "Pick one of --world or --local but not both"
+
+if args.world:
+    global_gen = GlobalMapGenerator()
+    global_gen.GenerateGlobalMaps(stride=50)
+    global_gen.ShowSaveElevation("figures/GlobalElevationMap")
+    global_gen.ShowSaveSlope("figures/GlobalElevationMap")
+elif args.local:
+    local_gen = MapGenerator()
+    local_gen.loadData(args.local)
+    # options are ['slope_riserun', 'slope_percentage', 'slope_degrees', 'slope_radians']
+    local_gen.calcSlope("slope_riserun")
+    local_gen.showElevationMap()
+    local_gen.showSlopeMap()
+
 # unless you have insane amounts of memory you should probably pick a stride >= 10
-gen.GenerateGlobalElevationMap(stride=100)
+# local_gen.GenerateGlobalElevationMap(stride=100)
