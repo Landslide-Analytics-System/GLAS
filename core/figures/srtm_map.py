@@ -17,10 +17,12 @@ class MapGenerator():
     def calcSlope(self, mode):
         if not hasattr(self, 'elevation_data'):
             print("Error: Asked to calc slope but no elevation file was designated.")
+        
+        mode_options = ['slope_riserun', 'slope_percentage', 'slope_degrees', 'slope_radians', 'aspect', 
+        'curvature', 'planform_curvature', 'profile_curvature']
 
-        if not mode in ['slope_riserun', 'slope_percentage', 'slope_degrees', 'slope_radians']:
-            print("Pass in one of " + ['slope_riserun', 'slope_percentage', 'slope_degrees', 'slope_radians'])
-            return
+        assert mode in mode_options, "Choose one of " + str(mode_options) + " as TerrainAttribute mode"
+
 
         self.elevation_filled = rd.rdarray(self.elevation_data, no_data=-9999)
         
@@ -32,6 +34,7 @@ class MapGenerator():
         plt.imshow(self.elevation_filled, interpolation="none", cmap="magma")
         plt.title(self.filename[:-4] + " Elevation Map")
         plt.colorbar()
+        plt.tight_layout()
         plt.show()
     
 
@@ -40,6 +43,7 @@ class MapGenerator():
         plt.imshow(self.slope_data, interpolation="none", cmap="magma")
         plt.title(self.filename[:-4] + " Slope Map")
         plt.colorbar()
+        plt.tight_layout()
         plt.show()
     
     def saveElevationMap(self):
