@@ -5,12 +5,13 @@ import argparse
 parser = argparse.ArgumentParser()
 parser.add_argument("--global", action="store_true", dest="global_")
 parser.add_argument("--local", type=str)
-parser.add_argument("--mode", type=str)
+parser.add_argument("--mode", type=str, default="slope_riserun")
 
 args = parser.parse_args()
 
 print(args)
-assert args.global_ != args.local, "Pick one of --gloal or --local but not both"
+assert args.global_ and args.local == None, "Pick one of --global or --local but not both"
+assert args.global_ != args.local, "Pick one of --global or --local but not both"
 
 # mode options are ['slope_riserun', 'slope_percentage', 'slope_degrees', 'slope_radians', 'aspect',
 #                   'curvature', 'planform_curvature', 'profile_curvature']
