@@ -1,0 +1,1 @@
+dataset.csv contains ARI and forest loss data. It is missing slope data
