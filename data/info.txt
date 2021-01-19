@@ -1,1 +1,3 @@
 dataset.csv contains ARI and forest loss data. It is missing slope data
+forest - Whether forest loss occurred in years before or the year of the landslide
+forest2 - Whether forest loss occurred in years before the landslide
