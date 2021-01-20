@@ -56,10 +56,10 @@ if not os.path.exists("Data"):
     os.makedirs("Data")
 
 done = 0
-while done < 12000:
+while done < 8000:
     print(done)
     decimals = 4
-    lat = str(float(rand.randint(-90*10**4, 90*10**4))/float(10**4))
+    lat = str(float(rand.randint(-60*10**4, 60*10**4))/float(10**4))
     lon = str(float(rand.randint(-180*10**4, 180*10**4))/float(10**4))
     year = str(rand.randint(2009, 2020))
     month = str(rand.randint(1, 12))
