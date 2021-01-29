@@ -1,3 +1,5 @@
 forest - Whether forest loss occurred in years before or the year of the landslide
 forest2 - Whether forest loss occurred in years before the landslide
 forest_year - 0 if no forest loss in the years before the landslide. Otherwise, largest # of years after 2000 but before landslide date when forest loss occurred.
+ARI 1-9: 7-day ARI periods for day of landslide up to 8 days before.
+osm - Count of # of street/infrastructure/human related tags

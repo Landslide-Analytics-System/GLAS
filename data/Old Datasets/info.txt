@@ -1,0 +1,4 @@
+original_dataset.csv - The original dataset with landslides and negative data from times when landslides had not occurred.
+negative_dataset.csv - Just the randomly, collected negative data
+incomplete_dataset.csv - Landslide data with the randomly, collected negative data.
+dataset.csv - Above but with climate data from 15 days before up to the day of.
