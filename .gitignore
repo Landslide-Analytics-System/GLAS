@@ -6,6 +6,8 @@
 *.png
 *.jpg
 *.jpeg
+*.tif
+
 
 # v1 files
 v1/data/elevation/elevation_data

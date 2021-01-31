@@ -3,14 +3,14 @@ from core.figures.global_srtm_map import GlobalMapGenerator
 import argparse
 
 parser = argparse.ArgumentParser()
-parser.add_argument("--global", action="store_true", dest="global_")
+parser.add_argument("--global", default=False, dest="global_", action="store_true")
 parser.add_argument("--local", type=str)
 parser.add_argument("--mode", type=str, default="slope_riserun")
 
 args = parser.parse_args()
 
 print(args)
-assert args.global_ and args.local == None, "Pick one of --global or --local but not both"
+assert args.global_== False and args.local != None, "Pick one of --global or --local but not both"
 assert args.global_ != args.local, "Pick one of --global or --local but not both"
 
 # mode options are ['slope_riserun', 'slope_percentage', 'slope_degrees', 'slope_radians', 'aspect',
