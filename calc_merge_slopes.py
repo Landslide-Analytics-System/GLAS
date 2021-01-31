@@ -9,7 +9,7 @@ def merge_dfs():
     dataset = pd.read_csv("data/dataset.csv")
     dataset['slope'] = slopes['slope']
     dataset = dataset[dataset['slope'] != -1]
-    dataset.to_csv("data/dataset_with_slopes.csv")
+    dataset.to_csv("data/dataset_with_slopes.csv", index=False)
 
 def calc_slopes():
     base_dir = "data/elevation"
