@@ -1,4 +1,4 @@
-from TifHandler import TifHandler
+from .TifHandler import TifHandler
 import pandas as pd
 import os
 import gc

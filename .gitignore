@@ -7,6 +7,9 @@
 *.jpg
 *.jpeg
 *.tif
+*.osm
+*.osm\ 2
+data/elevation/
 
 
 # v1 files

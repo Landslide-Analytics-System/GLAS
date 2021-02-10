@@ -1,6 +1,5 @@
 import os
 import numpy as np
-from tqdm.utils import disp_trim
 from .srtm_map import MapGenerator
 from ..utils.hgt_parser import HGTParser
 from tqdm import tqdm
@@ -11,8 +10,9 @@ import richdem as rd
 class GlobalMapGenerator():
     def __init__(self):
         self.gen = MapGenerator()
-        self.base_dir = "data/elevation/"
+        self.base_dir = "data/elevation/mercator" # was "data/elevation"
         self.hgt_files = os.listdir(self.base_dir)
+        self.hgt_files = [i for i in self.hgt_files if i[-4:]==".tif"] # was .hgt
         self.global_elevation_data = None
     
     def shrink(data, rows, cols):
@@ -94,7 +94,6 @@ class GlobalMapGenerator():
     def ShowSaveSlope(self, filepath):
         # len x width
         plt.figure(figsize=(20,8))
-        plt.imshow(self.global_slope_data)
         plt.imshow(self.global_slope_data, cmap="jet")
         plt.title("Global Slope Heatmap (Non-Trimmed)")
         plt.colorbar()
