@@ -47,6 +47,7 @@ for i in range(15, 4, -1):
 for i in range(5, 10):
     columns.append("ari" + str(i))
 columns.append("osm")
+columns.append("slope")
 df = pd.DataFrame(columns=columns)
 dif = 0.006
 tags = []
