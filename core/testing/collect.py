@@ -48,6 +48,7 @@ for i in range(5, 10):
     columns.append("ari" + str(i))
 columns.append("osm")
 columns.append("slope")
+columns.append("forest2")
 df = pd.DataFrame(columns=columns)
 dif = 0.006
 tags = []
@@ -97,6 +98,16 @@ for idx, line in enumerate(file.readlines()):
 
     count = handler.count()
     content.append(count)
+    # Slope here
+
+    # Uncomment the following lines if you have the TIF Files. Then provide the file name on the line below.
+    # f_name = ""
+    # tif = TifHandler(fname)
+    # year = 2000 + int(date[-2:])
+    # results = tif.forestLoss(year, lat, lon)
+    # # results[0] is forest2. results[1] is forest_year
+    # # print(results[0], results[1])
+    # content.extend(results[0])
     df.loc[idx] = content
 
 print(df)
