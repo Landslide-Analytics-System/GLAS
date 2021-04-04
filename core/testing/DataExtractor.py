@@ -2,12 +2,9 @@ from bs4 import BeautifulSoup
 
 
 class DataExtractor:
-    # lid is the Landslide ID (folder name)
-    # file_name is the file_name file name
     def __init__(self, lid, data):
         self.lid = lid
         self.extracted = False
-        # self.file_name = file_name
         self.extracted = True
         self.data = str(data)
 

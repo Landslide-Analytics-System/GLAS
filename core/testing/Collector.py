@@ -17,7 +17,6 @@ class Collector:
 
     def getData(self):
         file_names, params = self.gen_query(self.lat, self.lon, self.date)
-        # print(file_names)
         file_names.reverse()
         params.reverse()
         weather = []
@@ -25,11 +24,8 @@ class Collector:
             api_call = self.api_format + param
             resp = requests.get(api_call)
             d = DataExtractor(self.oID, resp.content)
-            # print(d.maxPrecip(), ":", resp.content)
-            # print(d.maxPrecip(), end = ' ')
             weather.extend([d.maxPrecip(), d.maxTemp(),
                             d.maxAirPressure(), d.maxHumidity(), d.maxWind()])
-        # print()
         return weather
 
     def gen_query(self, lat, lon, date, days_in_advance=15):
