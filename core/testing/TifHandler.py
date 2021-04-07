@@ -1,6 +1,3 @@
-from matplotlib.pyplot import plot, draw, show
-import matplotlib.pyplot as plt
-import pandas as pd
 import numpy as np
 import PIL
 from PIL import Image
@@ -10,7 +7,7 @@ PIL.Image.MAX_IMAGE_PIXELS = 10**10
 class TifHandler:
     def __init__(self, f_name):
         self.f_name = f_name
-        self.ar = np.array(Image.open("TIF Files/"+f_name))
+        self.ar = np.array(Image.open(f_name))
         self.f0 = -1 if f_name[-10] == 'S' else 1
         self.f1 = -1 if f_name[-5] == 'W' else 1
         self.top_left = [int(f_name[-12:-10]) * self.f0,

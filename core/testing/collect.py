@@ -1,19 +1,13 @@
 import requests
-import os
-import datetime
-import sys
-from dateutil import parser
 from Collector import Collector
 from TifHandler import TifHandler
-from DataExtractor import DataExtractor
 import pandas as pd
-from time import sleep
-from contextlib import contextmanager
-from webdriver_manager.chrome import ChromeDriverManager
-from selenium import webdriver
 from OSMHandler import OSMHandler
 
 file = open("input.txt", "r")
+
+# Provide a list of the TIF file names that go along with each landslide in input.txt
+fnames = ["Hansen_GFC-2019-v1.7_lossyear_40N_010E.tif"]
 
 def rnd(n, p):
     return round(n * 10**p)/(10**p)
@@ -75,7 +69,8 @@ for idx, line in enumerate(file.readlines()):
     # the first 55 columns in content are for precip15, temp15, ..... precip5, temp5, air5, humid5, wind5
     # The next 5 columns are ari5, ari6, ari7, ari8, ari9
     # the next column is street data.
-    # forest data hasn't been added yet.
+    # followed by slope data
+    # then forest loss data
     content.extend(aris)
 
     lat = float(line.split(" ")[0])
@@ -98,16 +93,13 @@ for idx, line in enumerate(file.readlines()):
 
     count = handler.count()
     content.append(count)
-    # Slope here
+    # Slope comes here. Add it to the content array
 
-    # Uncomment the following lines if you have the TIF Files. Then provide the file name on the line below.
-    # f_name = ""
-    # tif = TifHandler(fname)
-    # year = 2000 + int(date[-2:])
-    # results = tif.forestLoss(year, lat, lon)
-    # # results[0] is forest2. results[1] is forest_year
-    # # print(results[0], results[1])
-    # content.extend(results[0])
+    fname = fnames[idx]
+    tif = TifHandler(fname)
+    year = 2000 + int(date[-2:])
+    results = tif.forestLoss(year, lat, lon)
+    content.append(1 if results[0] else 0)
     df.loc[idx] = content
 
 print(df)
