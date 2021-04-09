@@ -8,10 +8,10 @@ y = X.landslide
 columns = []
 for i in range(9, 4, -1):
     columns.append('humidity' + str(i))
-    columns.append('ARI' + str(i))
+    columns.append('ari' + str(i))
 columns.append('slope')
 columns.append('forest2')
-columns.append('realosm')
+columns.append('osm')
 X = X[columns]
 
 scaler = StandardScaler()
@@ -22,7 +22,7 @@ filename = 'model.sav'
 loaded_model = pickle.load(open(filename, 'rb'))
 result = loaded_model.score(X, y)
 pred = loaded_model.predict(X)
-print("Accuracy: ", result)
+print("Accuracy: \n", result)
 print("=============")
 print("Actual:  ", y)
 print("Predicted:", pred)
