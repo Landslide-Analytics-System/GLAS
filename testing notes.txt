@@ -1,0 +1,11 @@
+Field testing landslides
+- https://www.nytimes.com/2021/04/04/world/asia/floods-landslides-indonesia.html - DONE
+- https://www.npr.org/2021/02/08/965515638/landslide-in-northern-india-leaves-at-least-24-dead-more-missing - DONE
+- https://www.theguardian.com/us-news/2021/mar/10/hawaii-landslides-emergency-declaration-weather-rain-floods - DONE
+- https://thediplomat.com/2021/01/earthquake-sets-off-landslides-flattens-homes-in-indonesia/
+
+old input declaration
+46.726906 13.787332 09/04/16
+49.726406 -116.911834 03/23/17
+43.4756 -110.7826 04/17/14
+49.726406 -116.911834 03/23/17
