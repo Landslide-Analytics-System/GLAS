@@ -171,7 +171,7 @@ class SusceptibilityMap:
     def SaveForestMap(self, save_dir):
       print("Saving forest map...")
       plt.figure(figsize=(20, 8))
-      plt.imshow(self.forest_data, cmap="magma")
+      plt.imshow(self.slope_data, cmap="magma")
       plt.colorbar()
       plt.tight_layout()
       plt.savefig(save_dir, dpi=300)

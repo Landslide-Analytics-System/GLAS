@@ -91,7 +91,7 @@ columns.append("landslide")
 df = pd.DataFrame(columns=columns)
 dif = 0.006
 tags = []
-tagF = open("tags.txt", "r")
+tagF = open("input.txt", "r")
 tags = tagF.read().split(", ")
 for idx, line in enumerate(file.readlines()):
     line = line.strip()
