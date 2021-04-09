@@ -6,8 +6,8 @@ import subprocess
 import rasterio
 
 def decdeg2dms(dd):
-   is_positive = dd >= 0
-   dd = abs(dd)
+   is_positive = float(dd) >= 0
+   dd = abs(float(dd))
    minutes,seconds = divmod(dd*3600,60)
    degrees,minutes = divmod(minutes,60)
    degrees = degrees if is_positive else -degrees
