@@ -146,7 +146,7 @@ for idx, line in enumerate(file.readlines()):
     year = 2000 + int(date[-2:])
     results = tif.forestLoss(year, lat, lon)
     content.append(1 if results[0] else 0)
-    content.append(1)
+    content.append(line.split(" ")[3])
     df.loc[idx] = content
 
 print(df)
