@@ -10,6 +10,8 @@
 *.osm
 *.osm\ 2
 data/elevation/
+*.gdb
+*.geojson
 
 
 # v1 files
