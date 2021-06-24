@@ -20,6 +20,7 @@ class Collector:
         file_names.reverse()
         params.reverse()
         weather = []
+        # data is collected from 15, 14, 13 ... 5 days ago in that order
         for file_name, param in zip(file_names, params):
             api_call = self.api_format + param
             resp = requests.get(api_call)
@@ -28,6 +29,7 @@ class Collector:
                             d.maxAirPressure(), d.maxHumidity(), d.maxWind()])
         return weather
 
+    # returns list of dates & queries from 5 days ago, then 6, 7, 8 ... 15
     def gen_query(self, lat, lon, date, days_in_advance=15):
         date_list = []
         params_list = []

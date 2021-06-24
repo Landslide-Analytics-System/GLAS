@@ -52,7 +52,7 @@ def getSlope(lat, lon):
         print(filename + " not found. Appending -1.")
         return -1
 
-    converter = ElevationConverter(base_dir, filename)
+    converter = ElevationConverte r(base_dir, filename)
     max_slope = converter.get_slope(lat, lon)
     return max_slope
 
@@ -103,8 +103,10 @@ for idx, line in enumerate(file.readlines()):
 
     c = Collector(lat, lon, date)
     weather = [date, lat, lon]
+    # weather data from 15, then 14, then 13... then 5 days ago
     weather.extend(c.getData())
     precip = []
+    # gets precipitation from 15, then 14,.... then 5 days ago
     for i in range(3, len(weather), 5):
         precip.append(weather[i])
 
