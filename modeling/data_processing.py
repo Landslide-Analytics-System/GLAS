@@ -6,6 +6,7 @@ from sklearn.compose import ColumnTransformer
 from sklearn.pipeline import Pipeline
 from sklearn.model_selection import train_test_split
 from tqdm import tqdm
+from collections import Counter
 
 def scale_split(X, y):
     # 70/20/10 train/test/val split
@@ -60,7 +61,7 @@ class Dataset:
         columns = []
         for i in range(9, 4, -1):
             columns.append('humidity' + str(i))
-            columns.append('air' + str(i))
+            # columns.append('air' + str(i))
             columns.append('ARI' + str(i))
         columns.append('slope')
         columns.append('forest')
@@ -89,7 +90,7 @@ class Dataset:
         for i in range(9, 4, -1):
             columns.append('humidity' + str(i))
             columns.append('ARI' + str(i))
-            columns.append('air' + str(i))
+            # columns.append('air' + str(i))
         columns.append('slope')
         columns.append('forest')
         columns.append('osm')
@@ -107,16 +108,19 @@ class Dataset:
             if row.landslide == 1:
                 y.append(lastday-4)
             else:
-                y.append(-1)
+                if Counter(y)[-1] < 2284:
+                    y.append(-1)
+                else:
+                    continue
             temp=[]
             if lastday in days:
                 days[lastday] +=1
             else:
                 days[lastday] = 0
             for i in range(6):
-                temp.append(row['humidity' + str(lastday-i)])
+                # temp.append(row['humidity' + str(lastday-i)])
                 temp.append(row['ARI' + str(lastday-i)])
-                temp.append(row['wind' + str(lastday-i)])
+                # temp.append(row['wind' + str(lastday-i)])
             temp.append(row['slope'])
             year = int(str(row.date)[-2:])
             temp.append(row['forest'])
@@ -127,10 +131,12 @@ class Dataset:
             X.append(temp)
             # if idx == 0:
             #     print(year, row.forest_year)
+
+        print(Counter(y)[-1])
         return scale_split(X, y)
 
 if __name__ == '__main__':
     glif = Dataset("GLIF_Dataset.csv")
-    glif.prepareBinaryData()
-    glif.prepareSeverityData()
+    # glif.prepareBinaryData()
+    # glif.prepareSeverityData()
     glif.prepareTimeData()

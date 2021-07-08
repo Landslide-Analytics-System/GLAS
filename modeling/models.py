@@ -36,8 +36,9 @@ def getMetrics(model, name, task, y_test, pred, probas, best=None, best_c=None, 
 
     with open(f"model-saves/{name}-{task.replace(' ', '-')}.pkl", "wb") as f:
         pickle.dump(model, f)
-
-
+    
+    print(array.tolist())
+    
     results = {"fpr": fpr.tolist(), "tpr": tpr.tolist(), "thresholds": thresholds.tolist(), "accuracy": accuracy, "precision": precision, "recall": recall, "auc": auc, "f1": f1}
     return results
 
@@ -109,3 +110,6 @@ def trainSVC(X_train, X_test, X_val, y_train, y_test, y_val, task):
     probas = model.predict_proba(X_test)[:,1]
 
     return getMetrics(model, "SVC", task, y_test, pred, probas, best_gamma=best_gamma, best_c=best_c)
+
+def trainLSTM():
+    pass

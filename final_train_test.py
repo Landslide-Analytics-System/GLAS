@@ -1,4 +1,4 @@
-from modeling.figures import plotROCAllModels
+from modeling.figures import saveROCAllModels
 from modeling.data_processing import Dataset
 from modeling.models import trainRF, trainKNN, trainSVC
 import json
@@ -19,6 +19,8 @@ results["binary"] = temp
 with open('final_results.json', 'w+') as fp:
     json.dump(results, fp)
 
+saveROCAllModels(results["binary"])
+
 
 print("----------Severity Classification----------")
 X_train, X_test, X_val, y_train, y_test, y_val = glif.prepareSeverityData()
@@ -38,6 +40,3 @@ results["date"] = temp
 
 with open('final_results.json', 'w+') as fp:
     json.dump(results, fp)
-
-
-plotROCAllModels(results["binary"])

@@ -11,7 +11,7 @@ def saveConfusionMatrix(filename, title, matrix):
     plt.title(title)
     plt.savefig("figures/"+filename, bbox_inches = 'tight')
 
-def plotROCAllModels(results):
+def saveROCAllModels(results):
     plt.clf()
     plt.plot([0,1],[0,1], 'k--')
     plt.plot(results["rf"]["fpr"], results["rf"]["tpr"], label= "Random Forest")
@@ -21,4 +21,4 @@ def plotROCAllModels(results):
     plt.xlabel("False Positive Rate")
     plt.ylabel("True Positive Rate")
     plt.title('Receiver Operating Characteristic (ROC) Curve')
-    plt.show()
+    plt.savefig("figures/ROC_Curve_Binary.png", bbox_inches="tight")
