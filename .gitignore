@@ -12,7 +12,7 @@
 data/elevation/
 *.gdb
 *.geojson
-
+*.pkl
 
 # v1 files
 v1/data/elevation/elevation_data
