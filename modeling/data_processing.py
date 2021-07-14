@@ -61,7 +61,7 @@ class Dataset:
         columns = []
         for i in range(9, 4, -1):
             columns.append('humidity' + str(i))
-            # columns.append('air' + str(i))
+            columns.append('air' + str(i))
             columns.append('ARI' + str(i))
         columns.append('slope')
         columns.append('forest')
@@ -90,7 +90,7 @@ class Dataset:
         for i in range(9, 4, -1):
             columns.append('humidity' + str(i))
             columns.append('ARI' + str(i))
-            # columns.append('air' + str(i))
+            columns.append('air' + str(i))
         columns.append('slope')
         columns.append('forest')
         columns.append('osm')
@@ -118,9 +118,9 @@ class Dataset:
             else:
                 days[lastday] = 0
             for i in range(6):
-                # temp.append(row['humidity' + str(lastday-i)])
+                temp.append(row['humidity' + str(lastday-i)])
                 temp.append(row['ARI' + str(lastday-i)])
-                # temp.append(row['wind' + str(lastday-i)])
+                temp.append(row['wind' + str(lastday-i)])
             temp.append(row['slope'])
             year = int(str(row.date)[-2:])
             temp.append(row['forest'])
