@@ -11,15 +11,18 @@ import pandas as pd
 
 file = open("input.txt", "r")
 
-# Provide a list of the TIF file names that go along with each landslide in input.txt
+# Provide a list of the TIF files that go along with each landslide in input.txt
+# These files must be located in the same folder as collect.py
 fnames = ["Hansen_GFC-2019-v1.7_treecover2000_00N_120E.tif",
-"Hansen_GFC-2019-v1.7_treecover2000_30N_070E.tif",
-"Hansen_GFC-2019-v1.7_treecover2000_30N_160W.tif",
-]
+          "Hansen_GFC-2019-v1.7_treecover2000_30N_070E.tif",
+          "Hansen_GFC-2019-v1.7_treecover2000_30N_160W.tif",
+          ]
+
 
 def rnd(n, p):
     return round(n * 10**p)/(10**p)
 
+# get slope from given lat, lon
 
 
 def getSlope(lat, lon):
@@ -29,13 +32,13 @@ def getSlope(lat, lon):
         filename = "S"
     else:
         filename = "N"
-        
+
     lon_letter = ""
     if float(lon) < 0:
         lon_letter = "W"
     else:
         lon_letter = "E"
-        
+
     zero_lat = ""
     if (abs(float(lat)) < 10):
         zero_lat = "0"
@@ -45,7 +48,7 @@ def getSlope(lat, lon):
         zero_lon = "0"
     if (abs(float(lon)) < 10):
         zero_lon = "00"
-        
+
     filename += f"{zero_lat}{str(abs(int(float(lat))))}{lon_letter}{zero_lon}{str(abs(int(float(lon))))}.tif"
     # print("Converting " + filename)
     if not os.path.isfile(os.path.join(merc_dir, filename)):
@@ -58,9 +61,10 @@ def getSlope(lat, lon):
 
 # input: array of 11 precipitations 15 - 5
 # return: array of ARI from 5 - 9
+
+
 def getARI(precip):
     precip.reverse()
-    # now idx 0 is precipitation for 5 days before.
     aris = []
     for day in range(0, 5):
         w = 0
@@ -73,7 +77,7 @@ def getARI(precip):
     return aris
 
 
-write = []
+# Names of the columns in the dataset to be created
 columns = ["date", "lat", "lon"]
 for i in range(15, 4, -1):
     columns.append("precip" + str(i))
@@ -88,29 +92,34 @@ columns.append("osm")
 columns.append("slope")
 columns.append("forest2")
 columns.append("landslide")
+
 df = pd.DataFrame(columns=columns)
-dif = 0.006
-tags = []
-tagF = open("input.txt", "r")
+dif = 0.007
+
+# Tags to look for in OSM files (infrastructure)
+tagF = open("tags.txt", "r")
 tags = tagF.read().split(", ")
+
 for idx, line in enumerate(file.readlines()):
     line = line.strip()
     lat = str(line.split(" ")[0])
     lon = str(line.split(" ")[1])
     date = str(line.split(" ")[2])
     print(date, lat, lon)
-    oID = lat + "," + lon
+
+    # content is the list that will be written to the CSV file (it is the row)
+    content = [date, lat, lon]
 
     c = Collector(lat, lon, date)
-    weather = [date, lat, lon]
+
     # weather data from 15, then 14, then 13... then 5 days ago
-    weather.extend(c.getData())
+    weather = c.getData()
     precip = []
-    # gets precipitation from 15, then 14,.... then 5 days ago
-    for i in range(3, len(weather), 5):
+    # gets precipitation from 15, then 14,.... then 5 days ago (to calculate ARI)
+    for i in range(0, len(weather), 5):
         precip.append(weather[i])
 
-    content = weather
+    content.extend(weather)
     aris = getARI(precip)
 
     # the first 55 columns in content are for precip15, temp15, ..... precip5, temp5, air5, humid5, wind5
