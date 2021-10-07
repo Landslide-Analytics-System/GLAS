@@ -90,7 +90,7 @@ for i in range(5, 10):
     columns.append("ari" + str(i))
 columns.append("osm")
 columns.append("slope")
-columns.append("forest2")
+columns.append("forest")
 columns.append("landslide")
 
 df = pd.DataFrame(columns=columns)
