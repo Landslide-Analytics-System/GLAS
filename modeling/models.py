@@ -9,18 +9,27 @@ import pickle
 import numpy as np
 
 def getMetrics(model, name, task, y_test, pred, probas, best=None, best_c=None, best_gamma=None):
-    accuracy = accuracy_score(y_test, pred)
-    precision = precision_score(y_test, pred, average='macro')
-    recall = recall_score(y_test, pred, average='macro')
     
+    f1 = f1_score(y_test, pred, average="micro" if task !="Binary Classification" else "binary")
+    array = confusion_matrix(y_test, pred)
+
+    if task == "Binary Classification":
+        accuracy = (array[0][0]+array[1][1])/(array[0][0]+array[1][1]+array[0][1]+array[1][0])
+        precision = array[1][1]/(array[1][1] + array[0][1])
+        recall = array[1][1]/(array[1][1]+array[1][0])
+    else:
+        accuracy = np.trace(np.asarray(array))/np.sum(array)
+        accuracy = accuracy_score(y_test, pred)
+        precision = precision_score(y_test, pred, average='macro')
+        recall = recall_score(y_test, pred, average='macro')
+    
+    
+
     if task=="Binary Classification":
         auc = roc_auc_score(y_test, probas)
         fpr, tpr, thresholds = roc_curve(y_test, probas)
     else:
         auc, fpr, tpr, thresholds = None, np.array([]), np.array([]), np.array([])
-
-    f1 = f1_score(y_test, pred, average="micro" if task !="Binary Classification" else "binary")
-    array = confusion_matrix(y_test, pred, normalize='true')
 
     if name == "RF":
         print(f"RF: {best} trees: accuracy, {accuracy}%, precision: {precision}, recall: {recall}, auc: {auc}")

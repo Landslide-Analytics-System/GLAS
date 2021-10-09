@@ -9,19 +9,19 @@ results = json.loads(text)
 lstmtpr = eval(open("tpr.txt", "r").read())
 lstmfpr = eval(open("fpr.txt", "r").read())
 
-print(auc(lstmtpr, lstmtpr))
+lstm_score = str(auc(lstmfpr, lstmtpr))[:5]
 
-print(results['binary']['rf']['auc'])
-print(results['binary']['knn']['auc'])
-print(results['binary']['svc']['auc'])
+rf_score = str(results['binary']['rf']['auc'])[:5]
+knn_score = str(results['binary']['knn']['auc'])[:5]
+svc_score = str(results['binary']['svc']['auc'])[:5]
 
 def saveROCAllModels(results):
     plt.clf()
     plt.plot([0,1],[0,1], 'k--')
-    plt.plot(results["rf"]["fpr"], results["rf"]["tpr"], label= "Random Forest (AUC: 0.938)")
-    plt.plot(results["knn"]["fpr"], results["knn"]["tpr"], label= "K-Nearest Neighbors (AUC: 0.806)")
-    plt.plot(results["svc"]["fpr"], results["svc"]["tpr"], label= "Support Vector Machine with RBF (AUC: 0.826)")
-    plt.plot(lstmfpr, lstmtpr, label= "LSTM Neural Network (AUC: 0.747)")
+    plt.plot(results["rf"]["fpr"], results["rf"]["tpr"], label= "Random Forest (AUC: "+rf_score+")")
+    plt.plot(results["knn"]["fpr"], results["knn"]["tpr"], label= "K-Nearest Neighbors (AUC: "+knn_score+")")
+    plt.plot(results["svc"]["fpr"], results["svc"]["tpr"], label= "Support Vector Machine with RBF (AUC: "+svc_score+")")
+    plt.plot(lstmfpr, lstmtpr, label= "LSTM Neural Network (AUC: "+lstm_score+")")
     
     plt.legend()
     plt.xlabel("False Positive Rate")
