@@ -22,8 +22,6 @@ def getMetrics(model, name, task, y_test, pred, probas, best=None, best_c=None, 
         accuracy = accuracy_score(y_test, pred)
         precision = precision_score(y_test, pred, average='macro')
         recall = recall_score(y_test, pred, average='macro')
-    
-    
 
     if task=="Binary Classification":
         auc = roc_auc_score(y_test, probas)
